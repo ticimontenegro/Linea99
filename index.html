@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Línea 99 — Retiro / Villa Lugano | Huincul Transportes</title>
+        <meta name="description" content="Recorrido, paradas, horarios, frecuencias, tarifas SUBE y accesibilidad de la Línea 99 (Retiro – Villa Lugano), operada por Huincul Transportes." />
+        <link rel="icon" href="./images/dino-mascot.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <a href="#inicio" class="skip-link">Saltar al contenido</a>
+
+        <!-- ===================== HEADER (alerta + nav, bloque fijo) ===================== -->
+        <div id="header-wrap">
+
+        <div class="alert-bar" role="status">
+            <svg class="icon" style="width:1rem;height:1rem;color:var(--amber-400);animation:pulse 2s infinite;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <span class="text-amber" style="font-size:0.75rem;font-weight:500;letter-spacing:0.025em;">
+            <strong class="fw-bold">ALERTA DE TRÁNSITO:</strong> Demoras en zona Obelisco por manifestación. Desvíos parciales por Metrobus del Bajo.
+            </span>
+        </div>
+
+        <header class="site-header">
+            <a href="#inicio" class="logo" aria-label="Huincul Transportes — ir al inicio">
+            <span class="logo-mark"><img src="./images/dino-mascot.png" alt="" /></span>
+            <span class="logo-text">Huincul Transportes</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+            <a class="nav-link" href="#recorrido">Paradas</a>
+            <a class="nav-link" href="#mapa">Mapa</a>
+            <a class="nav-link" href="#frecuencias">Frecuencias</a>
+            <a class="nav-link" href="#tarifas">Tarifas</a>
+            <a class="nav-link" href="#accesibilidad">Accesibilidad</a>
+            </nav>
+
+            <div class="header-actions">
+            <a class="btn-pill" href="#" data-external-home>
+                <span class="label">Centro de Transporte</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <button class="hamburger" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-panel">
+                <svg id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+                <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            </div>
+        </header>
+        </div>
+
+        <div class="mobile-backdrop" id="mobile-backdrop"></div>
+        <nav class="mobile-panel" id="mobile-panel" aria-label="Navegación móvil">
+        <a class="mobile-nav-link" href="#inicio">Inicio</a>
+        <a class="mobile-nav-link" href="#recorrido">Paradas</a>
+        <a class="mobile-nav-link" href="#mapa">Mapa</a>
+        <a class="mobile-nav-link" href="#frecuencias">Frecuencias</a>
+        <a class="mobile-nav-link" href="#tarifas">Tarifas</a>
+        <a class="mobile-nav-link" href="#accesibilidad">Accesibilidad</a>
+        </nav>
+
+        <main>
+
+        <!-- ===================== 1. HERO ===================== -->
+        <section id="inicio" class="hero">
+        <div class="hero-media">
+            <img src="./images/bus-hero.jpg" srcset="./images/bus-hero-sm.jpg 900w, ./images/bus-hero.jpg 1536w" sizes="100vw" alt="Colectivo de la Línea 99, Retiro – Villa Lugano" />
+            <div class="grad-t"></div>
+            <div class="grad-r"></div>
+            <div class="tint"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-head">
+            <h1 class="hero-title">LÍNEA <span class="accent">99</span></h1>
+            <div class="hero-badges-row">
+                <div class="hero-route">
+                <span class="pill-origin">Retiro</span>
+                <svg class="icon" style="width:1rem;height:1rem;color:var(--neutral-200)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <span class="pill-dest">Villa Lugano</span>
+                </div>
+                <p class="hero-lede">Conexión estratégica este - oeste atravesando la Ciudad Autónoma de Buenos Aires. Uniendo los principales centros de trasbordo y polos universitarios con unidades de última generación.</p>
+            </div>
+            </div>
+
+            <div class="status-dashboard">
+            <div class="status-item">
+                <span class="status-icon status-icon--emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </span>
+                <span class="status-text">
+                <span class="status-label">Estado del Servicio</span>
+                <span class="status-value">Con Demoras (Centro)</span>
+                </span>
+            </div>
+            <div class="status-divider status-divider--v"></div>
+            <div class="status-divider status-divider--h"></div>
+            <div class="status-item">
+                <span class="status-icon status-icon--amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </span>
+                <span class="status-text">
+                <span class="status-label">Clima CABA</span>
+                <span class="status-value">Despejado • 22°C</span>
+                </span>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== 2. PARADAS PRINCIPALES ===================== -->
+        <section id="recorrido" class="section content">
+        <div class="route-head">
+            <span class="eyebrow">Recorrido Estratégico</span>
+            <h2 class="heading-bold">Paradas Principales</h2>
+        </div>
+
+        <div class="route-track">
+            <div class="route-glow-line" aria-hidden="true"></div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle route-node-circle--terminal">
+                <img src="./images/stop-retiro.jpg" alt="Retiro" loading="lazy" />
+                </div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Retiro</span>
+                <span class="route-node-desc">Av. Ramos Mejía 1300 • FFCC Mitre/San Martín/Belgrano</span>
+                <span class="subte-badge">Subte C, E</span>
+            </div>
+            </div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle"><img src="./images/stop-obelisco.jpg" alt="Obelisco" loading="lazy" /></div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Obelisco</span>
+                <span class="route-node-desc">Metrobus 9 de Julio • Estación Sur</span>
+                <span class="subte-badge">Subte B, C, D</span>
+            </div>
+            </div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle"><img src="./images/stop-congreso.jpg" alt="Congreso" loading="lazy" /></div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Congreso</span>
+                <span class="route-node-desc">Av. Callao y Rivadavia • Plaza de los Dos Congresos</span>
+                <span class="subte-badge">Subte A</span>
+            </div>
+            </div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle"><img src="./images/stop-once.jpg" alt="Once" loading="lazy" /></div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Once</span>
+                <span class="route-node-desc">Plaza Miserere • Centro de Trasbordo • FFCC Sarmiento</span>
+                <span class="subte-badge">Subte A, H</span>
+            </div>
+            </div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle"><img src="./images/stop-flores.jpg" alt="Flores" loading="lazy" /></div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Flores</span>
+                <span class="route-node-desc">Av. Rivadavia y Artigas • Estación San José de Flores</span>
+                <span class="subte-badge">Subte A</span>
+            </div>
+            </div>
+
+            <div class="route-node">
+            <div class="route-node-dot-wrap">
+                <div class="route-node-glow"></div>
+                <div class="route-node-circle route-node-circle--terminal">
+                <img src="./images/stop-villalugano.jpg" alt="Villa Lugano" loading="lazy" />
+                </div>
+            </div>
+            <div class="route-node-text">
+                <span class="route-node-name">Villa Lugano</span>
+                <span class="route-node-desc">Av. Cnel. Roca 5200 • Premetro / Polo Educativo UBA</span>
+                <span class="subte-badge">Subte P</span>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== 3. MAPA Y UBICACIÓN ===================== -->
+        <section id="mapa" class="section content">
+        <div class="mapa-grid">
+            <div class="mapa-copy">
+            <div class="mapa-head">
+                <span class="eyebrow">En Vivo</span>
+                <h2 class="heading-split heading-split--lg">Mapa y <strong>Ubicación</strong></h2>
+            </div>
+            <p style="color:var(--neutral-200);font-weight:300;font-size:1rem;line-height:1.625;">El recorrido atraviesa los lugares principales de Buenos Aires. Nuestras terminales de cabecera operan como centros de integración multimodal, conectando con las principales líneas de trenes y la red de subterráneos.</p>
+
+            <div class="mapa-cards">
+                <div class="mapa-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                    <h5>Terminal Retiro (Cabecera Este)</h5>
+                    <p>Av. Dr. José María Ramos Mejía 1300, Retiro. Conexión directa con FFCC Mitre, San Martín y Belgrano Norte. Acceso a Subte C y E.</p>
+                </div>
+                </div>
+                <div class="mapa-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                    <h5>Terminal Villa Lugano (Cabecera Oeste)</h5>
+                    <p>Av. Coronel Roca 5200, Villa Lugano. Centro de trasbordo con Premetro (Estación Centro Cívico) y acceso directo al Polo Educativo UBA Lugano.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="mapa-map">
+            <iframe title="Mapa Interactivo Google Maps Línea 99" src="https://maps.google.com/maps?saddr=Retiro,+CABA,+Argentina&daddr=Obelisco,+CABA,+Argentina+to:Plaza+del+Congreso,+CABA,+Argentina+to:Plaza+Miserere,+CABA,+Argentina+to:Plaza+Flores,+CABA,+Argentina+to:Av.+Coronel+Roca+5200,+CABA,+Argentina&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="mapa-live-tag">
+                <div class="mapa-live-pill">
+                <span class="mapa-live-dot"></span>
+                <span>Mapa Interactivo Live</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== 4. FRECUENCIAS Y HORARIOS ===================== -->
+        <section id="frecuencias" class="frecuencias-section">
+        <div class="frecuencias-top">
+            <div class="frecuencias-left">
+            <div class="mapa-head">
+                <span class="eyebrow">Frecuencia del Transporte</span>
+                <h2 class="heading-split heading-split--md">Demanda y <strong>Horarios</strong></h2>
+            </div>
+
+            <div class="toggle-group" role="tablist" aria-label="Tipo de día">
+                <button class="toggle-btn is-active" id="tab-habiles" role="tab" aria-selected="true" type="button">Hábiles</button>
+                <button class="toggle-btn" id="tab-finde" role="tab" aria-selected="false" type="button">Fines de Semana</button>
+            </div>
+
+            <div class="freq-stat-card">
+                <span class="freq-stat-label">Frecuencia Actual (Promedio)</span>
+                <div class="freq-stat-value">
+                <span class="num" id="freq-number">Cada 4</span>
+                <span class="unit">min</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="frecuencias-right" id="freq-chart-mount">
+            <!-- el SVG del gráfico se inyecta desde script.js -->
+            </div>
+        </div>
+
+        <div class="schedule-wrap">
+            <div class="schedule-card">
+            <table class="schedule-table">
+                <thead>
+                <tr>
+                    <th class="col-turno">Turno</th>
+                    <th><span class="th-flex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg> Retiro</span></th>
+                    <th>Obelisco</th>
+                    <th>Congreso</th>
+                    <th>Once</th>
+                    <th>Flores</th>
+                    <th><span class="th-flex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg> Lugano</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td class="turno-cell">Mañana</td><td class="terminal-cell">05:00</td><td>05:15</td><td>05:25</td><td>05:35</td><td>05:55</td><td class="terminal-cell">06:20</td></tr>
+                <tr><td class="turno-cell">Mañana</td><td class="terminal-cell">09:30</td><td>09:45</td><td>09:55</td><td>10:05</td><td>10:25</td><td class="terminal-cell">10:50</td></tr>
+                <tr><td class="turno-cell">Tarde</td><td class="terminal-cell">14:00</td><td>14:15</td><td>14:25</td><td>14:35</td><td>14:55</td><td class="terminal-cell">15:20</td></tr>
+                <tr><td class="turno-cell">Tarde</td><td class="terminal-cell">17:30</td><td>17:45</td><td>17:55</td><td>18:05</td><td>18:25</td><td class="terminal-cell">18:50</td></tr>
+                <tr><td class="turno-cell">Noche</td><td class="terminal-cell">20:15</td><td>20:30</td><td>20:40</td><td>20:50</td><td>21:10</td><td class="terminal-cell">21:35</td></tr>
+                <tr><td class="turno-cell">Noche</td><td class="terminal-cell">22:30</td><td>22:45</td><td>22:55</td><td>23:05</td><td>23:25</td><td class="terminal-cell">23:50</td></tr>
+                <tr><td class="turno-cell">Madrugada</td><td class="terminal-cell">02:00</td><td>02:15</td><td>02:25</td><td>02:35</td><td>02:55</td><td class="terminal-cell">03:20</td></tr>
+                </tbody>
+            </table>
+            <div class="schedule-foot">
+                <span class="schedule-foot-note">Cronograma Diario Completo (Sentido Este-Oeste). Sujeto a condiciones de tráfico.</span>
+                <span class="schedule-foot-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                En horario
+                </span>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== 5. TARIFAS Y MEDIOS ===================== -->
+        <section id="tarifas" class="tarifas-section section">
+        <div class="tarifas-inner">
+            <div class="tarifas-head">
+            <span class="eyebrow">Ecosistema de Pago</span>
+            <h2 class="heading-split heading-split--lg">Tarifas y <strong>Medios</strong></h2>
+            <p style="color:var(--neutral-200);font-weight:300;font-size:0.875rem;margin-top:1rem;max-width:32rem;line-height:1.625;">Nuestra flota opera exclusivamente bajo el Sistema Único de Boleto Electrónico, garantizando agilidad y transparencia. Las tarifas se encuentran actualizadas al cuadro tarifario vigente en CABA.</p>
+            </div>
+
+            <div class="tarifas-body">
+            <div class="fare-cards-col">
+                <div class="fare-cards-grid">
+                <div class="fare-card fare-card--default">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 1 0 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><line x1="13" y1="5" x2="13" y2="19" stroke-dasharray="2 2"/></svg>
+                    <h4>Boleto Mínimo</h4>
+                    <div class="price"><span class="int">$371</span><span class="dec">,13</span></div>
+                    <span class="desc">Tramo de 0 a 3 km (Ej. Retiro - Obelisco).</span>
+                </div>
+                <div class="fare-card fare-card--default">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <h4>Segunda Sección</h4>
+                    <div class="price"><span class="int">$413</span><span class="dec">,44</span></div>
+                    <span class="desc">Tramo de 3 a 6 km (Ej. Retiro - Once).</span>
+                </div>
+                <div class="fare-card fare-card--social">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.832 2.855"/></svg>
+                    <h4>Tarifa Social</h4>
+                    <div class="price"><span class="int">$167</span><span class="dec">,00</span></div>
+                    <span class="desc">Descuento del 55% para Jubilados, Pensionados y AUH.</span>
+                </div>
+                <div class="fare-card fare-card--student">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12.5V17a6 3 0 0 0 12 0v-4.5"/><path d="M22 10v6"/></svg>
+                    <h4>Estudiantil</h4>
+                    <div class="price"><span class="int">$0</span><span class="dec">,00</span></div>
+                    <span class="desc">Boleto Estudiantil 100% bonificado. Requiere validación.</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="sube-col">
+                <div class="sube-card">
+                <div class="sube-glow-1"></div>
+                <div class="sube-glow-2"></div>
+                <div class="sube-content">
+                    <div class="sube-top">
+                    <span class="sube-brand">SUBE</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <div class="sube-bottom">
+                    <span class="sube-number">6061 2682 0000 0000</span>
+                    <div class="sube-foot">
+                        <span class="sube-caption">Sistema Único de Boleto Electrónico</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== 6. ACCESIBILIDAD ===================== -->
+        <section id="accesibilidad" class="section content">
+        <div class="acc-head">
+            <span class="eyebrow">Diseño Universal (Pautas WCAG &amp; Movilidad)</span>
+            <h2 class="heading-split heading-split--md" style="margin-inline:auto">Características de <strong>Accesibilidad</strong></h2>
+            <p style="color:var(--neutral-200);font-weight:300;font-size:1rem;max-width:42rem;margin:1rem auto 0;line-height:1.625;">Un servicio pensado para todos. Nuestra flota e interfaz digital cumplen con los más altos estándares de accesibilidad e inclusión.</p>
+        </div>
+
+        <div class="acc-grid">
+            <div class="acc-card">
+            <div class="acc-card-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-2.36 3.5"/><path d="M4.24 14.5a5 5 0 0 0 6.88 6"/><path d="M13.76 17.5a5 5 0 0 0-6.88-6"/></svg></div>
+            <div class="acc-card-body">
+                <span class="acc-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-2.36 3.5"/><path d="M4.24 14.5a5 5 0 0 0 6.88 6"/><path d="M13.76 17.5a5 5 0 0 0-6.88-6"/></svg></span>
+                <div>
+                <h4>Movilidad Física</h4>
+                <p><strong>Rampas</strong> automatizadas de piso bajo en el 100% de la flota. Zonas exclusivas con <strong>espacios para silla de ruedas</strong> y cinturones de seguridad adaptados.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="acc-card">
+            <div class="acc-card-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></div>
+            <div class="acc-card-body">
+                <span class="acc-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></span>
+                <div>
+                <h4>Estímulos Sensoriales</h4>
+                <p>Sistema de <strong>información visual y sonora</strong> anunciando paradas. <strong>Señalización clara</strong> mediante pantallas LED de alto brillo tanto dentro como fuera de la unidad.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="acc-card">
+            <div class="acc-card-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div class="acc-card-body">
+                <span class="acc-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <div>
+                <h4>Accesibilidad Digital</h4>
+                <p>Nuestra web y App garantizan <strong>contraste adecuado de colores</strong> y una <strong>tipografía legible</strong> geométrica. Interfaz con <strong>navegación clara</strong> y lógica estructural.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="acc-gallery">
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Conocé la unidad</span>
+            <h3 class="acc-gallery-title">Así es por dentro la flota de la Línea 99</h3>
+            <div class="acc-gallery-grid">
+            <figure class="acc-gallery-item">
+                <img src="./images/bus-interior.jpg" alt="Interior del colectivo con asientos, barras de sujeción y validador SUBE" loading="lazy" />
+                <figcaption>Interior con aire acondicionado, asientos tapizados y validador SUBE de fácil acceso.</figcaption>
+            </figure>
+            <figure class="acc-gallery-item">
+                <img src="./images/bus-ramp.png" alt="Rampa de accesibilidad desplegada para el ingreso de sillas de ruedas" loading="lazy" />
+                <figcaption>Rampa manual desplegable en la puerta central para el ingreso de sillas de ruedas.</figcaption>
+            </figure>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===================== EXTRAS: SUSTENTABILIDAD Y TECNOLOGÍA ===================== -->
+        <section class="extras-section section--tight">
+        <div class="extras-grid">
+            <div class="extra-card extra-card--eco">
+            <div class="extra-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+            <div class="extra-card-icon-wrap">
+                <span class="extra-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
+                <h3>Flota Híbrida Cero Emisiones</h3>
+                <p>Nuestras nuevas unidades diésel-eléctricas reducen la huella de carbono en la Ciudad en un 40%.</p>
+                <span class="extra-tag">Plan BA Ciudad Verde</span>
+            </div>
+            </div>
+
+            <div class="extra-card extra-card--tech">
+            <div class="extra-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+            <div class="extra-card-icon-wrap">
+                <span class="extra-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
+                <h3>Conectados con la Ciudad</h3>
+                <p>Consultá cuándo llega la próxima unidad directamente en WhatsApp escribiendo a Boti, o mediante la app BA Cómo Llego.</p>
+                <button class="extra-btn" type="button">Consultar en Boti</button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        </main>
+
+        <!-- ===================== FOOTER ===================== -->
+        <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+            <div class="footer-logo"><img src="./images/dino-mascot.png" alt="" /></div>
+            <div class="footer-brand-name">Huincul Transportes</div>
+            </div>
+
+            <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Nuestras Redes</h4>
+                <div class="social-row">
+                <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg></a>
+                <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                <a href="#" class="social-btn" aria-label="X">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" style="width:1rem;height:1rem;fill:currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Útiles</h4>
+                <div class="footer-links">
+                <a href="#" class="footer-link"><span>Horarios y Frecuencias</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#" class="footer-link"><span>Recorridos y Paradas</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#" class="footer-link"><span>Tarifas y SUBE</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#" class="footer-link"><span>Reclamos y Sugerencias</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#" class="footer-link"><span>Trabajá con Nosotros</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <div class="contact-links">
+                <a href="tel:+541147218843" class="contact-link">
+                    <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+                    <span>(011) 4721-8843</span>
+                </a>
+                <a href="mailto:contacto@huincultransportes.com.ar" class="contact-link">
+                    <span class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                    <span>contacto@huincultransportes.com.ar</span>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
